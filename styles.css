@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: skyblue;
+}
+
+h1 {
+    color: white;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.matrix {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    /* Space between cells */
+    gap: 5px;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 70px;
+    height: 100px;
+    width: 100px;
+    background-color: hotpink;
+    color: white;
+    cursor: pointer;
+    /* Smooth transition */
+    /* transition: background-color 0.3s ease, transform 0.2s ease;  */
+}
+
+.cell:hover {
+    background-color: deeppink;
+    /* Slightly enlarge on hover */
+    /* transform: scale(1.05); */
+}
+
+.newGame {
+    /* Increased padding for a bigger button */
+    padding: 15px 30px; 
+    margin-top: 20px;
+    /* Let width adjust based on content */
+    width: auto;
+    border-radius: 8px;
+    background-color: hotpink;
+    color: white;
+    font-weight: bolder;
+    font-size: 24px;
+    /* Remove default button border */
+    border: none;
+    cursor: pointer;
+    /* transition: background-color 0.3s ease, transform 0.2s ease; */
+}
+
+.newGame:hover {
+    background-color: deeppink;
+    /* Slightly enlarge on hover */
+    /* transform: scale(1.05); */
+}
+
+
+.winner {
+    margin-top: 15px;
+    font-weight: bolder;
+    font-size: 30px;
+    color: gold; 
+    text-align: center;
+}
+
+.moveCount {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    color: white; 
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: hotpink;
+}
